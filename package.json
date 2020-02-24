@@ -1,0 +1,16 @@
+{
+  "name": "natours-1",
+  "version": "1.0.0",
+  "description": "Natours website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Aman Manocha",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.13.1"
+  }
+}

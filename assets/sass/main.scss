@@ -5,14 +5,14 @@
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
-@import "base/utilities";
-
-@import "layout/header";
+@import "base/utilities"; 
+           
+@import "layout/header"; 
 @import "layout/grid";
+             
+@import "pages/home"; 
 
-@import "pages/home";
-
-@import "components/button";         
-@import "components/composition";
+@import "components/button";           
+@import "components/composition"; 
 @import "components/feature-box";       
-@import "components/card";
+@import "components/card";              

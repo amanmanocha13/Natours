@@ -318,15 +318,13 @@ body {
 
 .story {
   width: 75%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 6rem;
   padding-left: 9rem;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
-  .story:not(:last-child) {
-    margin-bottom: 10rem; }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -335,7 +333,6 @@ body {
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    background-color: orangered;
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
   .story__img {
@@ -362,6 +359,19 @@ body {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
@@ -433,5 +443,5 @@ body {
   padding: 25rem 0 15rem 0; }
 
 .section-stories {
-  background-color: #f7f7f7;
+  position: relative;
   padding: 15rem 0; }
